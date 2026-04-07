@@ -157,7 +157,7 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
 
 /* FIGURE IMAGES */
 .figure-wrap{text-align:center;margin:32px 0}
-.figure-wrap img{max-width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow-lg)}
+.figure-wrap img{max-width:min(900px,100%);height:auto;border-radius:var(--radius);box-shadow:var(--shadow-lg)}
 .figure-caption{font-size:.82rem;color:var(--text-light);margin-top:10px;font-style:italic;max-width:640px;margin-left:auto;margin-right:auto;line-height:1.5}
 
 /* HERO */
@@ -508,6 +508,16 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
       <p style="font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.6"><strong style="color:#fff">TRL 2–3.</strong> All 5 payloads are nucleic acids with similar properties. RNA co-loading is a quantitative optimization problem solvable by Design of Experiments.</p>
       <p style="font-size:.82rem;color:rgba(255,255,255,.5);margin-top:10px"><strong style="color:var(--green)">Fallback:</strong> Cocktail of 2–3 LNP subtypes. Retains therapeutic synergy.</p>
     </div>
+  </div>
+  <div class="card card-dark fade-in" style="margin-top:28px;border-left:4px solid var(--purple)">
+    <h3 style="color:var(--purple);margin-bottom:8px">In Silico De-Risking: Molecular Dynamics Simulations</h3>
+    <p style="font-size:.86rem;color:rgba(255,255,255,.75);line-height:1.6">Before any wet-lab assembly, every candidate nanoparticle architecture is stress-tested in silico. <strong style="color:#fff">Coarse-grained MD (Martini 3) and all-atom (CHARMM36/GROMACS)</strong> simulations probe lipid packing, PEG corona dynamics, payload occupancy, and the conformational response of each trigger (pH, ROS, GSH) across physiologically relevant environments. This narrows the experimental design space, predicts failure modes early, and provides a reusable computational model that informs every subsequent assembly iteration.</p>
+    <div class="grid grid-3" style="margin-top:14px;gap:12px">
+      <div style="background:rgba(139,92,246,.08);padding:10px 12px;border-radius:8px"><div style="font-size:.72rem;color:var(--purple);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px">Structural Stability</div><div style="font-size:.78rem;color:rgba(255,255,255,.7)">Bilayer integrity, leakage rates, corona shielding under blood-mimetic conditions</div></div>
+      <div style="background:rgba(139,92,246,.08);padding:10px 12px;border-radius:8px"><div style="font-size:.72rem;color:var(--purple);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px">Trigger Response</div><div style="font-size:.78rem;color:rgba(255,255,255,.7)">pH-titration of hydrazone bonds, thioketal cleavage kinetics, GSH-driven disulfide reduction</div></div>
+      <div style="background:rgba(139,92,246,.08);padding:10px 12px;border-radius:8px"><div style="font-size:.72rem;color:var(--purple);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px">Payload Packing</div><div style="font-size:.78rem;color:rgba(255,255,255,.7)">RNA co-loading stoichiometry, electrostatic interactions, release kinetics</div></div>
+    </div>
+    <p style="font-size:.78rem;color:rgba(255,255,255,.5);margin-top:12px;font-style:italic">Computational modeling is a standard first step in modern nanoparticle development — shifting failures from the bench to the cluster, where iteration is cheap.</p>
   </div>
   <div class="grid grid-4 fade-in" style="margin-top:28px">
     <div class="card card-dark kpi"><div class="kpi-value" style="color:var(--green)">6/10</div><div class="kpi-label" style="color:rgba(255,255,255,.6)">FDA-approved or in clinical trials</div></div>
