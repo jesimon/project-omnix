@@ -225,7 +225,6 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
   <div class="nav-inner">
     <div class="nav-brand">OMNIX<span>.</span></div>
     <a href="#hero" class="nav-link active" data-nav>Overview</a>
-    <a href="#revision" class="nav-link" data-nav>v2 Changes</a>
     <a href="#problem" class="nav-link" data-nav>Problem</a>
     <a href="#nanoparticle" class="nav-link" data-nav>Nanoparticle</a>
     <a href="#andgate" class="nav-link" data-nav>Release Gate</a>
@@ -245,7 +244,7 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
 <!-- HERO -->
 <section id="hero" class="hero">
   <div class="hero-content">
-    <span class="label" style="margin-bottom:16px;background:rgba(168,230,207,.15);color:#A8E6CF">NIH/NCI R01 RESEARCH PROPOSAL &nbsp;·&nbsp; ARCHITECTURE v2</span>
+    <span class="label" style="margin-bottom:16px;background:rgba(168,230,207,.15);color:#A8E6CF">NIH/NCI R01 RESEARCH PROPOSAL</span>
     <h1>Project OMNIX</h1>
     <p>A programmable nanotherapeutic platform that delivers four orthogonal payloads exclusively to tumor cells — using a conditional release gate plus antibody-fragment targeting, paired with a patient-specific companion particle.</p>
     <p style="font-size:.9rem;opacity:.6">Omni-Modal Nanotherapeutic with Intelligent Cross-Targeting</p>
@@ -256,47 +255,6 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
       <div class="hero-stat"><div class="hero-stat-value">4</div><div class="hero-stat-label">Hallmarks Targeted</div></div>
     </div>
   </div>
-</section>
-
-<!-- v2 REVISION -->
-<section id="revision" class="section-dark section">
-  <div class="fade-in">
-    <span class="label" style="background:rgba(240,165,0,.15);color:#F0A500">Architecture v2 &nbsp;·&nbsp; August 2026</span>
-    <h2 style="margin-top:12px;color:#fff">What Changed, and Why</h2>
-    <p class="text-light" style="max-width:720px;margin-bottom:32px">The v1 architecture was designed against the state of the field as it stood when the program was conceived. The modalities that actually reached patients in 2026 — the first approved protein degrader, the antibody-drug conjugate licensing wave, the first AI-discovered drug to show clinical efficacy — won by industrializing validated chemistry rather than inventing a new delivery paradigm. v2 keeps the OMNIX thesis and relocates the novelty.</p>
-  </div>
-  <div class="grid grid-3">
-    <div class="card card-dark fade-in stagger-1" style="border-left:4px solid var(--coral)">
-      <span class="label label-coral" style="margin-bottom:8px">Problem 1</span>
-      <h3 style="color:#fff;font-size:1rem">Risk was badly allocated</h3>
-      <p style="font-size:.85rem;color:rgba(255,255,255,.7);line-height:1.6">v1 stacked two separately unprecedented feats — a tri-conditional gate and five-payload co-encapsulation — onto a single critical path, both reported at TRL 2–3. That is two moonshots, not one program.</p>
-      <div style="margin-top:12px;padding:10px 12px;background:rgba(34,197,94,.1);border-radius:8px;border-left:3px solid var(--green)"><strong style="color:#4ADE80;font-size:.78rem">v2 FIX</strong><p style="font-size:.82rem;color:rgba(255,255,255,.8);margin-top:4px;line-height:1.5">Dual-gate primary architecture; ROS layer becomes a parallel upgrade path with its own go/no-go. Critical-path TRL rises to 4–5.</p></div>
-    </div>
-    <div class="card card-dark fade-in stagger-2" style="border-left:4px solid var(--coral)">
-      <span class="label label-coral" style="margin-bottom:8px">Problem 2</span>
-      <h3 style="color:#fff;font-size:1rem">Targeting used abandoned chemistry</h3>
-      <p style="font-size:.85rem;color:rgba(255,255,255,.7);line-height:1.6">Folate and transferrin ligands are first-generation targeting. Both receptors appear on healthy proliferating tissue, which is why the therapeutic windows disappointed. The ADC field solved this a decade ago.</p>
-      <div style="margin-top:12px;padding:10px 12px;background:rgba(34,197,94,.1);border-radius:8px;border-left:3px solid var(--green)"><strong style="color:#4ADE80;font-size:.78rem">v2 FIX</strong><p style="font-size:.82rem;color:rgba(255,255,255,.8);margin-top:4px;line-height:1.5">Antibody fragments (scFv/VHH) attached by unnatural-amino-acid site-specific conjugation, giving a uniform ligand-to-particle ratio.</p></div>
-    </div>
-    <div class="card card-dark fade-in stagger-3" style="border-left:4px solid var(--coral)">
-      <span class="label label-coral" style="margin-bottom:8px">Problem 3</span>
-      <h3 style="color:#fff;font-size:1rem">No answer to antigen heterogeneity</h3>
-      <p style="font-size:.85rem;color:rgba(255,255,255,.7);line-height:1.6">v1 proposed swapping the BiTE target. That addresses heterogeneity <em>between</em> patients — not the antigen-negative cells sitting inside the same tumor. Those cells are what relapse is made of.</p>
-      <div style="margin-top:12px;padding:10px 12px;background:rgba(34,197,94,.1);border-radius:8px;border-left:3px solid var(--green)"><strong style="color:#4ADE80;font-size:.78rem">v2 FIX</strong><p style="font-size:.82rem;color:rgba(255,255,255,.8);margin-top:4px;line-height:1.5">A bystander-capable topoisomerase I payload that diffuses out of dying cells and kills antigen-negative neighbours directly.</p></div>
-    </div>
-  </div>
-  <div class="card card-dark fade-in" style="margin-top:28px;border-left:4px solid var(--gold)">
-    <span class="label label-gold" style="margin-bottom:8px">Problem 4 &nbsp;·&nbsp; Not a biology problem</span>
-    <h3 style="color:#fff;font-size:1.05rem">The supply chain could stop the program outright</h3>
-    <p style="font-size:.88rem;color:rgba(255,255,255,.75);line-height:1.6;margin-top:6px">The BIOSECURE Act was enacted as Section 8513 of the FY2026 NDAA on 18 December 2025. Its contractor flow-down provision bars <em>any</em> entity receiving federal funds — explicitly including NIH-funded research institutions — from using equipment, services, or data platforms linked to a designated Biotechnology Company of Concern anywhere in its supply chain. <strong style="color:#fff">OMNIX is proposed as an NIH R01. The provision applies directly.</strong> Prohibitions bite around late 2028 — Year 3 of a five-year program starting now. v1 did not mention this anywhere.</p>
-    <div style="margin-top:12px;padding:10px 12px;background:rgba(34,197,94,.1);border-radius:8px;border-left:3px solid var(--green)"><strong style="color:#4ADE80;font-size:.78rem">v2 FIX</strong><p style="font-size:.82rem;color:rgba(255,255,255,.8);margin-top:4px;line-height:1.5">A dedicated supply-chain workstream: full multi-tier vendor map in Year 1, and a compliant second source qualified for every critical step before Year 3. See <a href="#supplychain" style="color:#4ADE80">Supply Chain</a>.</p></div>
-  </div>
-  <div class="card card-dark fade-in" style="margin-top:20px;border-left:4px solid var(--teal)">
-    <h3 style="color:var(--teal-light);font-size:1.05rem">The structural change: two particles, not one</h3>
-    <p style="font-size:.88rem;color:rgba(255,255,255,.75);line-height:1.6;margin-top:6px">v1 forced five payloads — including a patient-specific neoantigen cassette — into a single particle. That conflates two problems with opposite manufacturing profiles: a universal product you want to make at scale and stockpile, and a personalized product you need to make in weeks for one patient. v2 splits them into <strong style="color:#fff">OMNIX-U</strong>, a defined four-component universal particle, and <strong style="color:#fff">OMNIX-P</strong>, a single-mRNA personalized particle built on the individualized-neoantigen process already run through the clinic. The two are co-administered.</p>
-    <p style="font-size:.82rem;color:rgba(255,255,255,.5);margin-top:10px;font-style:italic">This is not a retreat. It removes the personalization bottleneck from the hard particle, drops co-encapsulation from five species to four, and produces a stockpileable asset.</p>
-  </div>
-  <p style="font-size:.78rem;color:rgba(255,255,255,.4);margin-top:20px;text-align:center">Revision prompted by Bruce Li, "AI Has Reinvented Drug Discovery. Now Come the Borders," HackerNoon, 11 August 2026.</p>
 </section>
 
 <!-- THE PROBLEM -->
@@ -320,12 +278,12 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
     <div class="card fade-in stagger-3" style="border-top:4px solid var(--coral)">
       <h3 class="text-coral">Antibody-Drug Conjugates</h3>
       <p style="font-size:2rem;font-weight:800;color:var(--coral);margin:8px 0">1 axis</p>
-      <p class="text-light" style="font-size:.88rem">Single mechanism of action vulnerable to target downregulation, drug efflux, and linker instability. Resistance inevitably emerges — but the navigation and linker chemistry are the most mature in oncology, and v2 borrows both.</p>
+      <p class="text-light" style="font-size:.88rem">Single mechanism of action vulnerable to target downregulation, drug efflux, and linker instability. Resistance inevitably emerges — but its navigation and linker chemistry are the most mature in oncology, and OMNIX builds on both.</p>
     </div>
   </div>
   <div class="card card-accent fade-in" style="margin-top:28px;background:linear-gradient(to right,#F0FDF9,#fff)">
     <h3 style="color:var(--teal)">The OMNIX Hypothesis</h3>
-    <p style="font-size:.92rem;line-height:1.6">Attacking cancer along <strong>orthogonal biological axes simultaneously</strong> will overwhelm adaptive resistance. v2 sharpens the claim: the novelty is not any single component but the <strong>combination</strong> — conditional delivery of a bystander-capable cytotoxic, a catalytic protein degrader, and two immune-engaging mRNAs to the same tumor cell, with a personalized companion particle expanding tumor-reactive T cells alongside it.</p>
+    <p style="font-size:.92rem;line-height:1.6">Attacking cancer along <strong>orthogonal biological axes simultaneously</strong> will overwhelm adaptive resistance. The novelty is not any single component but the <strong>combination</strong> — conditional delivery of a bystander-capable cytotoxic, a catalytic protein degrader, and two immune-engaging mRNAs to the same tumor cell, with a personalized companion particle expanding tumor-reactive T cells alongside it.</p>
     <p style="font-size:.88rem;line-height:1.6;margin-top:10px;color:var(--text-light)">Every individual mechanism in that list has now been validated in patients. None of them has been combined this way.</p>
   </div>
   <div class="grid grid-3 fade-in" style="margin-top:24px">
@@ -352,7 +310,7 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
   <div class="fade-in">
     <span class="label" style="background:rgba(168,230,207,.15);color:#A8E6CF">Platform Design</span>
     <h2 style="margin-top:12px;color:#fff">Nanoparticle Architecture</h2>
-    <p class="text-light" style="max-width:720px;margin-bottom:32px">An 80–120 nm lipid nanoparticle with concentric functional layers. v2 adds a site-specifically conjugated antibody-fragment targeting layer and moves the ROS-responsive thioketal crosslinks off the critical path into a parallel upgrade track.</p>
+    <p class="text-light" style="max-width:720px;margin-bottom:32px">An 80–120 nm lipid nanoparticle with concentric functional layers, each controlled by a tumor-specific condition. A site-specifically conjugated antibody-fragment targeting layer sits on the outside; the ROS-responsive thioketal crosslinks develop on a parallel upgrade track.</p>
   </div>
   <div class="np-container fade-in">
     <div class="np-svg-wrap">
@@ -375,7 +333,7 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
       <button class="np-layer-btn active" data-layer="peg" onclick="selectLayer(this)">
         <span class="label label-blue" style="margin-bottom:4px">Outer</span>
         <span class="layer-name" style="color:var(--blue)">PEG Corona + Targeting Layer</span>
-        <span class="layer-detail">Attached via <strong>acid-labile hydrazone bonds</strong>. Stealth coating for 12–18 hr half-life. Sheds at tumor pH &lt; 6.8, exposing <strong>site-specifically conjugated antibody fragments</strong> (scFv/VHH) at a uniform ligand-to-particle ratio. <span style="color:#F0A500">v2: replaces folate/transferrin ligands.</span></span>
+        <span class="layer-detail">Attached via <strong>acid-labile hydrazone bonds</strong>. Stealth coating for 12–18 hr half-life. Sheds at tumor pH &lt; 6.8, exposing <strong>site-specifically conjugated antibody fragments</strong> (scFv/VHH) at a uniform ligand-to-particle ratio, giving antibody-grade navigation rather than receptor-level targeting.</span>
       </button>
       <button class="np-layer-btn" data-layer="outer" onclick="selectLayer(this)">
         <span class="label label-gold" style="margin-bottom:4px">Gate 1</span>
@@ -390,19 +348,19 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
       <button class="np-layer-btn" data-layer="mid" onclick="selectLayer(this)">
         <span class="label label-purple" style="margin-bottom:4px">Upgrade Track</span>
         <span class="layer-name" style="color:var(--purple)">Thioketal Crosslinks</span>
-        <span class="layer-detail"><strong>ROS-responsive.</strong> Fragments at &gt;100 μM reactive oxygen species. <span style="color:#F0A500">v2: moved off the critical path.</span> Developed in parallel with its own go/no-go — its batch-reproducibility risk no longer gates the whole program.</span>
+        <span class="layer-detail"><strong>ROS-responsive.</strong> Fragments at &gt;100 μM reactive oxygen species. Developed in parallel with its own go/no-go, so its batch-reproducibility risk does not gate the rest of the program. Folds into the architecture only if it clears GMP-suitable criteria.</span>
       </button>
       <button class="np-layer-btn" data-layer="core" onclick="selectLayer(this)">
         <span class="label label-navy" style="margin-bottom:4px">Core</span>
         <span class="layer-name" style="color:var(--navy)">Therapeutic Cargo</span>
-        <span class="layer-detail">Four defined components: <strong>2 mRNA + 1 cleavable-linker cytotoxic + 1 targeted degrader</strong>. <span style="color:#F0A500">v2: down from five co-encapsulated RNAs</span> — the personalized neoantigen cassette now ships as a separate particle.</span>
+        <span class="layer-detail">Four defined components: <strong>2 mRNA + 1 cleavable-linker cytotoxic + 1 targeted degrader</strong>. The personalized neoantigen cassette ships separately, in its own companion particle.</span>
       </button>
     </div>
   </div>
   <!-- Inline grant proposal figure -->
   <div class="figure-wrap fade-in" style="margin-top:48px">
     <img src="fig1_nanoparticle.png" alt="OMNIX Nanoparticle Architecture Diagram" onerror="this.parentElement.style.display='none'"/>
-    <div class="figure-caption">Figure 1. Detailed cross-section of the OMNIX nanoparticle showing PEG corona (pH-labile hydrazone), lipid bilayer (pH-responsive), thioketal crosslinks (ROS-responsive), and disulfide-bonded cargo core (GSH-responsive). <em>Figure depicts the v1 architecture; the v2 targeting layer replaces the folate and transferrin ligands shown here with site-specifically conjugated antibody fragments, and the ROS thioketal layer moves to the parallel upgrade track.</em></div>
+    <div class="figure-caption">Figure 1. Detailed cross-section of the OMNIX nanoparticle showing PEG corona (pH-labile hydrazone), lipid bilayer (pH-responsive), thioketal crosslinks (ROS-responsive), and disulfide-bonded cargo core (GSH-responsive). <em>Schematic renders the full layer stack including the ROS-responsive upgrade track; the outer targeting layer is shown in generalized form.</em></div>
   </div>
   <div class="grid grid-2 fade-in" style="margin-top:40px;gap:20px">
     <div class="card card-dark" style="border-left:4px solid var(--teal)">
@@ -430,7 +388,7 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
   <div class="fade-in">
     <span class="label label-purple">Core Innovation · Revised</span>
     <h2 style="margin-top:12px">Conditional Release Gate</h2>
-    <p class="text-light" style="max-width:720px;margin-bottom:16px">The particle requires <strong>two biochemical conditions plus antigen engagement</strong> to release its payload. v1 required three biochemical triggers and inherited the reproducibility risk of its weakest one; v2 recovers the lost selectivity through the targeting layer instead — trading an unproven chemistry for a proven one.</p>
+    <p class="text-light" style="max-width:720px;margin-bottom:16px">The particle requires <strong>two biochemical conditions plus antigen engagement</strong> to release its payload. Using the two highest-maturity biochemical triggers and recovering selectivity through the targeting layer keeps every element of the primary path on proven chemistry.</p>
   </div>
   <div class="card fade-in" style="background:var(--navy);overflow:hidden;margin-bottom:20px">
     <div class="gate-flow">
@@ -450,7 +408,7 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
         <div class="gate-num">3</div>
         <div class="gate-title" style="color:#93C5FD">Antigen Engagement</div>
         <div class="gate-detail" style="color:rgba(255,255,255,.7)">scFv/VHH binds tumor antigen at uniform density. Receptor-mediated internalization.</div>
-        <div class="gate-condition" style="color:#93C5FD">v2 — new layer</div>
+        <div class="gate-condition" style="color:#93C5FD">scFv / VHH</div>
       </div>
       <div class="gate-step" style="background:rgba(13,124,102,.2)">
         <div class="gate-num">4</div>
@@ -461,13 +419,13 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
     </div>
   </div>
   <div class="card fade-in" style="margin-bottom:32px;border-left:4px solid var(--purple);background:linear-gradient(to right,#FAF5FF,#fff)">
-    <h3 style="color:var(--purple);font-size:1rem">Parallel upgrade track: the third biochemical trigger</h3>
-    <p style="font-size:.88rem;line-height:1.6;margin-top:6px">The ROS-responsive thioketal layer is not abandoned — it is decoupled. It develops on its own timeline with its own go/no-go, and folds into the architecture only if it clears batch-reproducibility criteria suitable for GMP. If it does, selectivity improves further. If it does not, the program does not stall. That is the entire point of the change: <strong>the weakest component no longer gates the strongest.</strong></p>
+    <h3 style="color:var(--purple);font-size:1rem">Parallel upgrade track: a third biochemical trigger</h3>
+    <p style="font-size:.88rem;line-height:1.6;margin-top:6px">The ROS-responsive thioketal layer is decoupled from the primary path. It develops on its own timeline with its own go/no-go, and folds into the architecture only if it clears batch-reproducibility criteria suitable for GMP. If it does, selectivity improves further. If it does not, the program does not stall. <strong>The least mature component does not gate the most mature ones.</strong></p>
   </div>
   <!-- Grant proposal figure: mechanism -->
   <div class="figure-wrap fade-in">
     <img src="fig2_mechanism.png" alt="OMNIX Activation Cascade and Kill Chain" onerror="this.parentElement.style.display='none'"/>
-    <div class="figure-caption">Figure 2. Sequential activation cascade: PEG-shielded circulation → pH-triggered PEG shedding → ROS-triggered bilayer destabilization → GSH-triggered cargo release. <em>Figure depicts the v1 tri-conditional cascade; in v2 the ROS step is replaced on the primary path by antigen engagement via the site-specifically conjugated targeting layer, and four payloads deploy rather than five.</em></div>
+    <div class="figure-caption">Figure 2. Sequential activation cascade: PEG-shielded circulation → pH-triggered PEG shedding → ROS-triggered bilayer destabilization → GSH-triggered cargo release. <em>Schematic renders the full cascade including the ROS-responsive upgrade step; on the primary path this position is occupied by antigen engagement via the targeting layer.</em></div>
   </div>
   <div class="grid grid-3 fade-in" style="margin-top:32px">
     <div class="card kpi" style="border-top:4px solid var(--gold)">
@@ -518,14 +476,14 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
       <div class="payload-name" style="color:var(--gold)">Topo I Inhibitor</div>
       <div class="payload-target" style="color:rgba(255,255,255,.5)">Small molecule · cleavable linker</div>
       <div class="payload-desc" style="color:rgba(255,255,255,.6)">Exatecan-class payload on a tetrapeptide linker. Diffuses out of dying cells to kill antigen-negative neighbours — the cells every targeted arm structurally misses.</div>
-      <div class="payload-hallmark" style="background:rgba(240,165,0,.15);color:var(--gold)">v2 · Bystander Kill</div>
+      <div class="payload-hallmark" style="background:rgba(240,165,0,.15);color:var(--gold)">Bystander Kill</div>
     </div>
     <div class="card card-dark payload-card" style="border-top:3px solid var(--purple);box-shadow:0 0 0 1px rgba(139,92,246,.3)">
       <div class="payload-icon">🗑️</div>
       <div class="payload-name" style="color:var(--purple)">Targeted Degrader</div>
       <div class="payload-target" style="color:rgba(255,255,255,.5)">Small molecule · PROTAC-class</div>
       <div class="payload-desc" style="color:rgba(255,255,255,.6)">Doesn't block the driver protein — deletes it. Catalytic: one molecule, many kills. Indifferent to the resistance mutations that defeat conventional inhibitors.</div>
-      <div class="payload-hallmark" style="background:rgba(139,92,246,.15);color:var(--purple)">v2 · Degradation</div>
+      <div class="payload-hallmark" style="background:rgba(139,92,246,.15);color:var(--purple)">Degradation</div>
     </div>
   </div>
   <div class="grid grid-2 fade-in" style="margin-top:24px;gap:20px">
@@ -535,7 +493,7 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
     </div>
     <div class="card card-dark" style="border-left:4px solid rgba(255,255,255,.2)">
       <div style="font-weight:700;color:rgba(255,255,255,.8);margin-bottom:6px">Expansion set — re-enters after go/no-go</div>
-      <p style="font-size:.85rem;color:rgba(255,255,255,.6);line-height:1.6"><strong>TERT/TERC siRNA</strong> (telomerase shutdown) and <strong>IL-15 + PKM2i</strong> (NK activation, macrophage repolarization, Warburg disruption) are retained in the program but deferred out of the v1 formulation. They return once the four-component particle clears its characterization criteria.</p>
+      <p style="font-size:.85rem;color:rgba(255,255,255,.6);line-height:1.6"><strong>TERT/TERC siRNA</strong> (telomerase shutdown) and <strong>IL-15 + PKM2i</strong> (NK activation, macrophage repolarization, Warburg disruption) are retained in the program but held out of the initial formulation. They enter once the four-component particle clears its characterization criteria.</p>
     </div>
   </div>
   <div class="card card-dark fade-in" style="margin-top:24px;border-left:4px solid var(--green)">
@@ -549,7 +507,7 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
   <div class="fade-in">
     <span class="label label-green">Safety by Design</span>
     <h2 style="margin-top:12px">Tumor-Exclusive Activation</h2>
-    <p class="text-light" style="max-width:700px;margin-bottom:32px">Individual conditions occur in healthy tissue — but not in combination, and not alongside tumor-antigen display. v2 replaces the third biochemical trigger with antigen engagement, which is both a more selective discriminator and a far more mature technology.</p>
+    <p class="text-light" style="max-width:700px;margin-bottom:32px">Individual conditions occur in healthy tissue — but not in combination, and not alongside tumor-antigen display. Antigen engagement serves as the third condition — both a sharper discriminator than a bulk biochemical trigger and a considerably more mature technology.</p>
   </div>
   <div class="grid grid-2 fade-in">
     <div class="compare-panel" style="background:#F0FDF4;border:2px solid rgba(34,197,94,.2)">
@@ -577,32 +535,32 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
   </div>
   <div class="card fade-in" style="margin-top:24px;border-left:4px solid var(--gold);background:linear-gradient(to right,#FFFBEB,#fff)">
     <h3 style="color:var(--gold);font-size:1rem">The honest caveat on selectivity claims</h3>
-    <p style="font-size:.88rem;line-height:1.6;margin-top:6px">v1 quoted a modeled false-positive activation rate below 0.001%. That figure came from multiplying independent trigger probabilities, which assumes the triggers are in fact independent — an assumption the model asserted rather than tested. v2 treats selectivity as an <strong>empirical endpoint to be measured</strong>, not a number to be derived: plasma stability of the cleavable linker and off-target release become primary release specifications, characterized experimentally before any efficacy claim is made. The bystander payload makes this more important, not less — a cytotoxic that leaks in circulation is chemotherapy with extra steps.</p>
+    <p style="font-size:.88rem;line-height:1.6;margin-top:6px">A false-positive activation rate derived by multiplying trigger probabilities would assume those triggers are statistically independent — an assumption that is easy to assert and hard to demonstrate. This program therefore treats selectivity as an <strong>empirical endpoint to be measured</strong> rather than a number to be derived: plasma stability of the cleavable linker and off-target release are primary release specifications, characterized experimentally before any efficacy claim is made. The bystander payload makes this more important, not less — a cytotoxic that leaks in circulation is chemotherapy with extra steps.</p>
   </div>
   <!-- Grant proposal figure: selectivity -->
   <div class="figure-wrap fade-in" style="margin-top:32px">
     <img src="fig3_selectivity.png" alt="OMNIX Tumor Selectivity Comparison" onerror="this.parentElement.style.display='none'"/>
-    <div class="figure-caption">Figure 3. Side-by-side comparison: healthy tissue (0/3 triggers, nanoparticle intact) vs. tumor microenvironment (3/3 triggers, full cargo release). <em>Figure depicts the v1 tri-trigger comparison and its modeled selectivity estimate; v2 substitutes antigen engagement for the ROS trigger and treats selectivity as a measured endpoint rather than a modeled one.</em></div>
+    <div class="figure-caption">Figure 3. Side-by-side comparison: healthy tissue (0/3 triggers, nanoparticle intact) vs. tumor microenvironment (3/3 triggers, full cargo release). <em>Schematic renders the general discrimination principle; on the primary path the third condition is antigen engagement, and selectivity is established experimentally rather than by modeling.</em></div>
   </div>
 </section>
 
 <!-- COMPUTATIONAL STACK -->
 <section id="compute" class="section-dark section">
   <div class="fade-in">
-    <span class="label label-purple">Computational Layer · Expanded in v2</span>
-    <h2 style="margin-top:12px;color:#fff">The AI Stack, Properly Specified</h2>
-    <p style="color:rgba(255,255,255,.7);max-width:740px;margin-bottom:16px">v1 had a single "AI Personalization Engine" doing neoantigen selection. That understates what the field now treats as table stakes. In 2026 an AI-identified target and an AI-designed molecule produced a statistically significant clinical result in human lungs — both ends of the equation came from a machine. v2 specifies four computational workstreams instead of one.</p>
+    <span class="label label-purple">Computational Layer</span>
+    <h2 style="margin-top:12px;color:#fff">The AI Stack</h2>
+    <p style="color:rgba(255,255,255,.7);max-width:740px;margin-bottom:16px">Computation is not a support function here — it sets the experimental agenda. In 2026 an AI-identified target and an AI-designed molecule produced a statistically significant clinical result in human lungs; both ends of the equation came from a machine. The program runs four computational workstreams.</p>
   </div>
   <div class="grid grid-4 fade-in">
     <div class="card card-dark" style="border-top:3px solid var(--blue)">
       <div style="font-size:1.6rem;margin-bottom:6px">🎯</div>
       <h3 style="color:#93C5FD;font-size:.95rem">1 · Target &amp; Payload Selection</h3>
-      <p style="font-size:.83rem;color:rgba(255,255,255,.7);line-height:1.55;margin-top:6px">Multi-omics selection of the degrader target and the BiTE antigen <em>per tumor type</em>, rather than fixing EpCAM by default. Directly addresses the antigen-heterogeneity failure mode that v1 could only mitigate after the fact.</p>
+      <p style="font-size:.83rem;color:rgba(255,255,255,.7);line-height:1.55;margin-top:6px">Multi-omics selection of the degrader target and the BiTE antigen <em>per tumor type</em>, rather than fixing a single antigen by default. Selection happens before the formulation is built, not as a recovery step after it fails.</p>
     </div>
     <div class="card card-dark" style="border-top:3px solid var(--gold)">
       <div style="font-size:1.6rem;margin-bottom:6px">✏️</div>
       <h3 style="color:var(--gold);font-size:.95rem">2 · Generative Lipid Design</h3>
-      <p style="font-size:.83rem;color:rgba(255,255,255,.7);line-height:1.55;margin-top:6px">3D graph neural networks and generative diffusion models design the pH-labile and GSH-reducible components. v1 implicitly assumed these would be picked off the shelf from existing literature.</p>
+      <p style="font-size:.83rem;color:rgba(255,255,255,.7);line-height:1.55;margin-top:6px">3D graph neural networks and generative diffusion models design the pH-labile and GSH-reducible components, exploring conformations the existing stimuli-responsive lipid literature has not covered.</p>
     </div>
     <div class="card card-dark" style="border-top:3px solid var(--purple)">
       <div style="font-size:1.6rem;margin-bottom:6px">🧪</div>
@@ -617,41 +575,41 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
   </div>
   <div class="card card-dark fade-in" style="margin-top:24px;border-left:4px solid var(--coral)">
     <h3 style="color:var(--coral);font-size:1rem">The constraint every one of these shares</h3>
-    <p style="font-size:.88rem;color:rgba(255,255,255,.75);line-height:1.6;margin-top:6px">These tools are data-hungry, and a model trained on one population's genetics produces medicine that works well for that population and less well for everyone else. That is a technical constraint, not an ideological preference — and it is the single most under-appreciated risk in a personalization platform. v2 addresses it explicitly in the <a href="#clinical" style="color:#FCA5A5">clinical design</a>.</p>
+    <p style="font-size:.88rem;color:rgba(255,255,255,.75);line-height:1.6;margin-top:6px">These tools are data-hungry, and a model trained on one population's genetics produces medicine that works well for that population and less well for everyone else. That is a technical constraint, not an ideological preference — and it is the single most under-appreciated risk in a personalization platform. It is addressed explicitly in the <a href="#clinical" style="color:#FCA5A5">clinical design</a>.</p>
   </div>
 </section>
 
 <!-- CLINICAL DESIGN -->
 <section id="clinical" class="section">
   <div class="fade-in">
-    <span class="label label-blue">Clinical Strategy · New in v2</span>
+    <span class="label label-blue">Clinical Strategy</span>
     <h2 style="margin-top:12px">Trial Design: Synthetic Controls and the Generalizability Trap</h2>
-    <p class="text-light" style="max-width:740px;margin-bottom:32px">v1's roadmap stopped at pre-IND with no clinical statistical strategy at all. Two changes here — and the second is the more important of the two.</p>
+    <p class="text-light" style="max-width:740px;margin-bottom:32px">Two commitments shape the trial design from the outset — and the second matters more than the first.</p>
   </div>
   <div class="grid grid-2 fade-in">
     <div class="card" style="border-top:4px solid var(--teal)">
-      <span class="label label-teal" style="margin-bottom:8px">Change 1</span>
+      <span class="label label-teal" style="margin-bottom:8px">Commitment 1</span>
       <h3 style="color:var(--teal)">Synthetic control arm</h3>
       <p style="font-size:.88rem;line-height:1.6;margin-top:8px">Rather than randomizing patients to placebo, a model generates a forecast of how <em>that specific patient's</em> disease would have progressed — built from baseline multi-omics and demographics, generated before randomization so it cannot be contaminated by the outcome. It enters the analysis as a covariate adjustment.</p>
       <p style="font-size:.88rem;line-height:1.6;margin-top:10px">Because you are comparing a patient to a prediction of themselves rather than to a group average, variance in the estimated treatment effect drops. Lower variance means fewer patients for the same statistical power — and fewer people receiving placebo instead of the experimental agent.</p>
       <div style="margin-top:12px;padding:10px 12px;background:#F0FDF9;border-radius:8px;border-left:3px solid var(--teal)">
-        <p style="font-size:.83rem;line-height:1.5">In advanced cancer, where standard of care is measured in months, that is not a statistical nicety. The FDA and EMA released joint guiding principles for AI in drug development in January 2026, and the FDA has published a seven-step credibility assessment framework for AI models in regulatory submissions. <strong>v2 designs the first-in-human protocol around this from the start rather than retrofitting it.</strong></p>
+        <p style="font-size:.83rem;line-height:1.5">In advanced cancer, where standard of care is measured in months, that is not a statistical nicety. The FDA and EMA released joint guiding principles for AI in drug development in January 2026, and the FDA has published a seven-step credibility assessment framework for AI models in regulatory submissions. <strong>The first-in-human protocol is designed around this from the start rather than retrofitted later.</strong></p>
       </div>
     </div>
     <div class="card" style="border-top:4px solid var(--coral)">
-      <span class="label label-coral" style="margin-bottom:8px">Change 2 · The one that matters more</span>
+      <span class="label label-coral" style="margin-bottom:8px">Commitment 2 · The one that matters more</span>
       <h3 style="color:var(--coral)">Multi-ancestry from day one</h3>
       <p style="font-size:.88rem;line-height:1.6;margin-top:8px">In 2026 a bispecific antibody beat the reigning standard of care head-to-head on progression-free survival — a result the oncology establishment did not see coming. Every patient in that trial was enrolled in one country. When the drug moved into a global trial it again cut risk of progression or death substantially, but landed at a hazard ratio of 0.79 on overall survival with a p-value of <strong>0.057</strong>. In the arithmetic of approval, 0.057 is not 0.05.</p>
-      <p style="font-size:.88rem;line-height:1.6;margin-top:10px">The lesson is not about any one country. It is that a result established in one population may not transfer — and OMNIX is a personalization platform whose engine would be trained on whatever reference data exists, which is overwhelmingly of European ancestry. v1's eight-line cell panel carried no ancestry annotation at all.</p>
+      <p style="font-size:.88rem;line-height:1.6;margin-top:10px">The lesson is not about any one country. It is that a result established in one population may not transfer — and OMNIX is a personalization platform whose engine would be trained on whatever reference data exists, which is overwhelmingly of European ancestry. A cell panel carrying no ancestry annotation cannot detect the problem, let alone correct it.</p>
       <div style="margin-top:12px;padding:10px 12px;background:#FFF5F5;border-radius:8px;border-left:3px solid var(--coral)">
-        <p style="font-size:.83rem;line-height:1.5"><strong>v2 commits to:</strong> multi-ancestry cell lines with documented provenance; multi-ancestry reference datasets for the neoantigen engine with performance reported by ancestry group; and prospective ancestry-stratified analysis in the clinical plan. This costs the program very little now and is close to unfixable later.</p>
+        <p style="font-size:.83rem;line-height:1.5"><strong>The program commits to:</strong> multi-ancestry cell lines with documented provenance; multi-ancestry reference datasets for the neoantigen engine with performance reported by ancestry group; and prospective ancestry-stratified analysis in the clinical plan. This costs the program very little now and is close to unfixable later.</p>
       </div>
     </div>
   </div>
   <div class="card card-accent fade-in" style="margin-top:28px;background:linear-gradient(to right,#F5F3FF,#fff);border-left:4px solid var(--purple)">
     <h3 style="color:var(--purple)">Open, reproducible regulatory package</h3>
     <p style="font-size:.9rem;line-height:1.6;margin-top:6px">A cheap commitment with a disproportionate credibility return. The first fully open-source-based New Drug Application was submitted to the FDA in 2025 — every analysis, table, and figure reproducible by anyone with a laptop. Follow-on work bundles interactive analyses so a reviewer can run a sponsor's work in a browser tab, and replaces the legacy <code>.xpt</code> data format with modern Dataset-JSON.</p>
-    <p style="font-size:.9rem;line-height:1.6;margin-top:10px">v2 commits the program to an R-based, containerized, Dataset-JSON regulatory package from first data collection, and to publishing negative results — including failed formulations — through open science infrastructure. Against R&D costs above $2.6 billion per approved drug and clinical success rates below 10%, the fact that the same failed experiment gets run at four companies simultaneously is not a rounding error. It is a large part of the problem.</p>
+    <p style="font-size:.9rem;line-height:1.6;margin-top:10px">The program commits to an R-based, containerized, Dataset-JSON regulatory package from first data collection, and to publishing negative results — including failed formulations — through open science infrastructure. Against R&D costs above $2.6 billion per approved drug and clinical success rates below 10%, the fact that the same failed experiment gets run at four companies simultaneously is not a rounding error. It is a large part of the problem.</p>
   </div>
 </section>
 
@@ -660,30 +618,30 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
   <div class="fade-in">
     <span class="label" style="background:rgba(168,230,207,.15);color:#A8E6CF">Honest Assessment</span>
     <h2 style="margin-top:12px;color:#fff">Technology Readiness</h2>
-    <p style="color:rgba(255,255,255,.7);max-width:720px;margin-bottom:8px">OMNIX is an <strong style="color:#A8E6CF">integration challenge, not a discovery challenge</strong>. Most individual components already exist — and v2 deliberately increased the proportion that does. <strong style="color:#A8E6CF">No component now sits below TRL 3, and nothing on the critical path sits below TRL 4.</strong></p>
-    <p style="color:rgba(255,255,255,.4);font-size:.82rem;margin-bottom:36px">TRL: 1 = basic principles · 3 = proof-of-concept · 5 = lab-validated · 7 = prototype · 9 = FDA-approved &nbsp;·&nbsp; <span style="color:#A8E6CF">✦ = changed or added in v2</span></p>
+    <p style="color:rgba(255,255,255,.7);max-width:720px;margin-bottom:8px">OMNIX is an <strong style="color:#A8E6CF">integration challenge, not a discovery challenge</strong>. Most individual components already exist, and the architecture is built deliberately to maximize that proportion. <strong style="color:#A8E6CF">No component sits below TRL 3, and nothing on the critical path sits below TRL 4.</strong></p>
+    <p style="color:rgba(255,255,255,.4);font-size:.82rem;margin-bottom:36px">TRL: 1 = basic principles · 3 = proof-of-concept · 5 = lab-validated · 7 = prototype · 9 = FDA-approved</p>
   </div>
   <div class="card fade-in" style="padding:28px;background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.08)" id="trl-chart"></div>
   <div class="grid grid-2 fade-in" style="margin-top:28px">
     <div class="card card-dark" style="border-left:4px solid var(--green)">
-      <h3 style="color:#4ADE80;margin-bottom:8px">Gap 1 — RESOLVED IN v2: Conditional Release Gate</h3>
-      <p style="font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.6"><strong style="color:#fff">Was TRL 2–3 · now TRL 4–5.</strong> The tri-conditional gate is no longer the critical path. Dual-stimuli pH+GSH systems are published by multiple groups and use the two highest-maturity triggers in the design; selectivity lost by dropping the third biochemical trigger is recovered through the antibody-fragment targeting layer.</p>
-      <p style="font-size:.82rem;color:rgba(255,255,255,.5);margin-top:10px"><strong style="color:var(--green)">Upgrade path:</strong> ROS thioketal layer develops in parallel with its own go/no-go. Its batch-reproducibility risk no longer gates the program.</p>
+      <h3 style="color:#4ADE80;margin-bottom:8px">Gap 1: Conditional Release Gate</h3>
+      <p style="font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.6"><strong style="color:#fff">TRL 4–5.</strong> Dual-stimuli pH+GSH systems are published by multiple groups and use the two highest-maturity triggers available; layering antigen engagement on top recovers the discrimination a third biochemical trigger would provide, using far better-established chemistry.</p>
+      <p style="font-size:.82rem;color:rgba(255,255,255,.5);margin-top:10px"><strong style="color:var(--green)">Upgrade path:</strong> ROS thioketal layer develops in parallel with its own go/no-go, so its batch-reproducibility risk does not gate the program.</p>
     </div>
     <div class="card card-dark" style="border-left:4px solid var(--green)">
-      <h3 style="color:#4ADE80;margin-bottom:8px">Gap 2 — REDUCED IN v2: Payload Co-Encapsulation</h3>
-      <p style="font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.6"><strong style="color:#fff">Was TRL 2–3 (5 species) · now TRL 3–4 (4 defined components).</strong> Moving the neoantigen cassette to a separate personalized particle removes the hardest species from the universal formulation. Two remaining RNAs plus two encapsulated small molecules is a more tractable and far more characterizable problem than five co-loaded RNAs.</p>
+      <h3 style="color:#4ADE80;margin-bottom:8px">Gap 2: Payload Co-Encapsulation</h3>
+      <p style="font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.6"><strong style="color:#fff">TRL 3–4.</strong> The universal particle carries four defined components: two mRNAs plus two encapsulated small molecules. Keeping the patient-specific cassette in its own particle keeps the hardest species out of the universal formulation, which makes the remaining problem both more tractable and far more characterizable.</p>
       <p style="font-size:.82rem;color:rgba(255,255,255,.5);margin-top:10px"><strong style="color:var(--green)">Fallback:</strong> Cocktail of 2 LNP subtypes. Retains therapeutic synergy.</p>
     </div>
   </div>
   <div class="grid grid-2 fade-in" style="margin-top:20px">
     <div class="card card-dark" style="border-left:4px solid var(--coral)">
-      <h3 style="color:var(--coral);margin-bottom:8px">Gap 3 — NEW IN v2: Linker Stability</h3>
-      <p style="font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.6"><strong style="color:#fff">TRL 6–7.</strong> Introduced by the cytotoxic small-molecule arm. The linker is the entire engineering problem in this modality: too labile and you have released chemotherapy into the bloodstream; too stable and you have built an expensive placebo.</p>
+      <h3 style="color:var(--coral);margin-bottom:8px">Gap 3: Linker Stability</h3>
+      <p style="font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.6"><strong style="color:#fff">TRL 6–7.</strong> The binding constraint on the cytotoxic small-molecule arm. The linker is the entire engineering problem in this modality: too labile and you have released chemotherapy into the bloodstream; too stable and you have built an expensive placebo.</p>
       <p style="font-size:.82rem;color:rgba(255,255,255,.5);margin-top:10px"><strong style="color:var(--green)">Advantage:</strong> This is borrowed chemistry, not invented chemistry — tetrapeptide cleavable linkers carrying exatecan-class payloads are the most clinically validated architecture in modern oncology.</p>
     </div>
     <div class="card card-dark" style="border-left:4px solid var(--gold)">
-      <h3 style="color:var(--gold);margin-bottom:8px">Gap 4 — NEW IN v2: Conjugation Uniformity</h3>
+      <h3 style="color:var(--gold);margin-bottom:8px">Gap 4: Conjugation Uniformity</h3>
       <p style="font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.6"><strong style="color:#fff">TRL 6–7.</strong> Non-specific conjugation produces a statistical smear — some particles heavily decorated, others bare — and an unpredictable therapeutic window. Unnatural-amino-acid site-specific conjugation gives a defined ligand-to-particle ratio.</p>
       <p style="font-size:.82rem;color:rgba(255,255,255,.5);margin-top:10px"><strong style="color:var(--green)">Specification:</strong> Uniformity becomes a release criterion, not a characterization footnote.</p>
     </div>
@@ -718,17 +676,17 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
     <div class="card mfg-step" style="margin-bottom:10px"><div class="mfg-num">2</div><div class="mfg-content"><div class="mfg-title">Lipid Component Preparation</div><div class="mfg-desc">Standard lipids GMP-grade (Evonik, Croda, NOF). Custom stimuli-responsive lipids require custom synthesis initially.</div><span class="mfg-tag" style="background:rgba(240,165,0,.1);color:var(--gold)">⚠ Custom lipids = highest risk</span></div></div>
     <div class="card mfg-step" style="margin-bottom:10px"><div class="mfg-num">3</div><div class="mfg-content"><div class="mfg-title">Microfluidic Nanoparticle Assembly</div><div class="mfg-desc">RNA + lipid solutions mixed via NanoAssemblr. Same process as Onpattro &amp; COVID vaccines. Scales by parallelizing channels.</div><span class="mfg-tag" style="background:rgba(34,197,94,.1);color:var(--green)">✓ Billions-of-doses proven</span></div></div>
     <div class="card mfg-step" style="margin-bottom:10px"><div class="mfg-num">4</div><div class="mfg-content"><div class="mfg-title">Downstream Processing</div><div class="mfg-desc">Tangential flow filtration (TFF) for buffer exchange and concentration. Sterile filtration. Standard biopharma operations.</div><span class="mfg-tag" style="background:rgba(34,197,94,.1);color:var(--green)">✓ Standard scale-up</span></div></div>
-    <div class="card mfg-step" style="margin-bottom:10px"><div class="mfg-num">5</div><div class="mfg-content"><div class="mfg-title">Site-Specific Conjugation &amp; Small-Molecule Loading <span style="font-size:.7rem;color:var(--gold)">v2</span></div><div class="mfg-desc">Unnatural-amino-acid conjugation of the antibody fragment at a defined ligand-to-particle ratio; loading of the cleavable-linker cytotoxic and the degrader. Adds a high-potency handling requirement to the facility spec.</div><span class="mfg-tag" style="background:rgba(240,165,0,.1);color:var(--gold)">⚠ Requires HPAPI-capable capacity</span></div></div>
-    <div class="card mfg-step"><div class="mfg-num">6</div><div class="mfg-content"><div class="mfg-title">Analytical Characterization</div><div class="mfg-desc">Size (DLS), PDI, zeta potential, RNA content (RiboGreen), individual payload RT-qPCR, encapsulation efficiency, endotoxin, sterility. <strong>v2 adds two release specifications: ligand-to-particle uniformity and plasma stability of the cleavable linker.</strong></div><span class="mfg-tag" style="background:rgba(34,197,94,.1);color:var(--green)">✓ Regulatory-accepted methods</span></div></div>
+    <div class="card mfg-step" style="margin-bottom:10px"><div class="mfg-num">5</div><div class="mfg-content"><div class="mfg-title">Site-Specific Conjugation &amp; Small-Molecule Loading</div><div class="mfg-desc">Unnatural-amino-acid conjugation of the antibody fragment at a defined ligand-to-particle ratio; loading of the cleavable-linker cytotoxic and the degrader. Adds a high-potency handling requirement to the facility spec.</div><span class="mfg-tag" style="background:rgba(240,165,0,.1);color:var(--gold)">⚠ Requires HPAPI-capable capacity</span></div></div>
+    <div class="card mfg-step"><div class="mfg-num">6</div><div class="mfg-content"><div class="mfg-title">Analytical Characterization</div><div class="mfg-desc">Size (DLS), PDI, zeta potential, RNA content (RiboGreen), individual payload RT-qPCR, encapsulation efficiency, endotoxin, sterility. <strong>Two further release specifications: ligand-to-particle uniformity and plasma stability of the cleavable linker.</strong></div><span class="mfg-tag" style="background:rgba(34,197,94,.1);color:var(--green)">✓ Regulatory-accepted methods</span></div></div>
   </div>
   <div class="grid grid-2 fade-in" style="margin-top:28px">
     <div class="card card-accent" style="background:linear-gradient(to right,#F0FDF9,#fff)">
       <h3 style="color:var(--teal)">Regulatory Precedent</h3>
-      <p style="font-size:.88rem;line-height:1.6">FDA has approved LNP-RNA products: <strong>Onpattro</strong> (2018, NDA), <strong>COVID mRNA vaccines</strong> (EUA → BLA). The first targeted protein degrader was approved on 1 May 2026, and the cleavable-linker/topoisomerase-payload architecture is carried by multiple approved conjugates. Every modality in the v2 design has a regulatory precedent. Year 5 includes a pre-IND meeting with FDA CBER.</p>
+      <p style="font-size:.88rem;line-height:1.6">FDA has approved LNP-RNA products: <strong>Onpattro</strong> (2018, NDA), <strong>COVID mRNA vaccines</strong> (EUA → BLA). The first targeted protein degrader was approved on 1 May 2026, and the cleavable-linker/topoisomerase-payload architecture is carried by multiple approved conjugates. Every modality in the design has a regulatory precedent. Year 5 includes a pre-IND meeting with FDA CBER.</p>
     </div>
     <div class="card" style="border-left:4px solid var(--gold);background:linear-gradient(to right,#FFFBEB,#fff)">
       <h3 style="color:var(--gold)">Buy the factory, not just the drug</h3>
-      <p style="font-size:.88rem;line-height:1.6">More than 80% of 2025 radiopharmaceutical deals explicitly included manufacturing or supply-chain integration. Owning a brilliant molecule means nothing without sterile fill-finish capacity to make it. v2 treats manufacturability as a <strong>value driver from Year 1</strong> rather than a Year 5 procurement detail — which is also what makes the program's output a licensable asset rather than a publication.</p>
+      <p style="font-size:.88rem;line-height:1.6">More than 80% of 2025 radiopharmaceutical deals explicitly included manufacturing or supply-chain integration. Owning a brilliant molecule means nothing without sterile fill-finish capacity to make it. Manufacturability is therefore treated as a <strong>value driver from Year 1</strong> rather than a Year 5 procurement detail — which is also what makes the program's output a licensable asset rather than a publication.</p>
     </div>
   </div>
 </section>
@@ -736,9 +694,9 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
 <!-- SUPPLY CHAIN / BIOSECURE -->
 <section id="supplychain" class="section-accent section">
   <div class="fade-in">
-    <span class="label" style="background:rgba(255,255,255,.18);color:#fff">Program Risk · New in v2</span>
+    <span class="label" style="background:rgba(255,255,255,.18);color:#fff">Program Risk</span>
     <h2 style="margin-top:12px;color:#fff">The Constraint That Isn't Biology</h2>
-    <p style="color:rgba(255,255,255,.85);max-width:760px;margin-bottom:32px">v1 did not mention this anywhere. It is the single change most likely to determine whether the program finishes.</p>
+    <p style="color:rgba(255,255,255,.85);max-width:760px;margin-bottom:32px">A regulatory constraint with no scientific content whatsoever, and the factor most likely to determine whether the program finishes.</p>
   </div>
   <div class="card fade-in" style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;backdrop-filter:blur(8px)">
     <h3 style="color:#fff;font-size:1.1rem">BIOSECURE applies directly to this program</h3>
@@ -758,7 +716,7 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
       <p style="font-size:.83rem;color:var(--text-light);margin-top:12px;font-style:italic">Because the Act uses dynamic designation keyed to the 1260H list rather than naming companies directly, a vendor can become unusable without any new legislation. Year 3 — between in vivo efficacy and IND-enabling toxicology — is the worst possible moment to discover that.</p>
     </div>
     <div class="card" style="background:rgba(255,255,255,.95);color:var(--text)">
-      <h3 style="color:var(--navy);font-size:1rem">v2 supply-chain workstream</h3>
+      <h3 style="color:var(--navy);font-size:1rem">Supply-chain workstream</h3>
       <div style="margin-top:10px;padding:10px 12px;background:#F0FDF4;border-radius:8px;border-left:3px solid var(--green);margin-bottom:10px">
         <div style="font-weight:700;font-size:.85rem;color:var(--green)">Year 1 — Vendor map</div>
         <p style="font-size:.84rem;line-height:1.5;margin-top:3px">Full multi-tier audit of every CRO, CDMO, sequencing vendor, and data platform. Compliance status tracked as a living document, not a one-time check.</p>
@@ -796,11 +754,11 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
         <tr><td><strong>ROS-responsive thioketals</strong></td><td><span class="evidence-check">✓ Preclinical</span></td><td>TKNPs in cancer/UC/CVD animal models (2024 publications)</td><td>GMP QC is open challenge addressed in Aim 1</td></tr>
         <tr><td><strong>GSH-responsive disulfides</strong></td><td><span class="evidence-check">✓ FDA-Approved</span></td><td>Mylotarg, Kadcyla (approved ADCs with disulfide linkers)</td><td>Regulatory precedent in approved therapeutics</td></tr>
         <tr><td><strong>Microfluidic GMP mfg</strong></td><td><span class="evidence-check">✓ Commercial</span></td><td>Cytiva NanoAssemblr; Pfizer/Moderna production lines</td><td>No new manufacturing technology required</td></tr>
-        <tr style="background:rgba(240,165,0,.06)"><td><strong>Targeted protein degradation</strong> <span style="color:var(--gold);font-size:.7rem">v2</span></td><td><span class="evidence-check">✓ FDA-Approved</span></td><td>First degrader approved 1 May 2026 for a resistance setting that defeats conventional inhibitors</td><td>Catalytic and mutation-agnostic — proof the modality is manufacturable and approvable</td></tr>
-        <tr style="background:rgba(240,165,0,.06)"><td><strong>Cleavable linker + topo I payload</strong> <span style="color:var(--gold);font-size:.7rem">v2</span></td><td><span class="evidence-check">✓ FDA-Approved</span></td><td>Exatecan-derived payload on tetrapeptide linker; the template underneath the modern ADC field</td><td>Delivers bystander killing of antigen-negative cells — borrowed, not invented</td></tr>
-        <tr style="background:rgba(240,165,0,.06)"><td><strong>Site-specific conjugation</strong> <span style="color:var(--gold);font-size:.7rem">v2</span></td><td><span class="evidence-check">✓ Clinical</span></td><td>Unnatural amino acid technologies producing uniform drug-to-antibody ratio</td><td>Uniformity widens the therapeutic window — the gap where patients live</td></tr>
-        <tr style="background:rgba(240,165,0,.06)"><td><strong>AI-designed drug in humans</strong> <span style="color:var(--gold);font-size:.7rem">v2</span></td><td><span class="evidence-check">✓ Phase IIa</span></td><td>Rentosertib: AI-identified target, AI-designed molecule, +98.4 mL FVC vs placebo</td><td>First clean clinical proof-of-concept for a machine-originated drug</td></tr>
-        <tr style="background:rgba(240,165,0,.06)"><td><strong>Synthetic control arm</strong> <span style="color:var(--gold);font-size:.7rem">v2</span></td><td><span class="evidence-check">✓ Regulatory guidance</span></td><td>FDA/EMA joint AI principles (Jan 2026); FDA 7-step credibility framework; external-control draft guidances</td><td>Fewer patients on placebo at the same statistical power</td></tr>
+        <tr><td><strong>Targeted protein degradation</strong></td><td><span class="evidence-check">✓ FDA-Approved</span></td><td>First degrader approved 1 May 2026 for a resistance setting that defeats conventional inhibitors</td><td>Catalytic and mutation-agnostic — proof the modality is manufacturable and approvable</td></tr>
+        <tr><td><strong>Cleavable linker + topo I payload</strong></td><td><span class="evidence-check">✓ FDA-Approved</span></td><td>Exatecan-derived payload on tetrapeptide linker; the template underneath the modern ADC field</td><td>Delivers bystander killing of antigen-negative cells — borrowed, not invented</td></tr>
+        <tr><td><strong>Site-specific conjugation</strong></td><td><span class="evidence-check">✓ Clinical</span></td><td>Unnatural amino acid technologies producing uniform drug-to-antibody ratio</td><td>Uniformity widens the therapeutic window — the gap where patients live</td></tr>
+        <tr><td><strong>AI-designed drug in humans</strong></td><td><span class="evidence-check">✓ Phase IIa</span></td><td>Rentosertib: AI-identified target, AI-designed molecule, +98.4 mL FVC vs placebo</td><td>First clean clinical proof-of-concept for a machine-originated drug</td></tr>
+        <tr><td><strong>Synthetic control arm</strong></td><td><span class="evidence-check">✓ Regulatory guidance</span></td><td>FDA/EMA joint AI principles (Jan 2026); FDA 7-step credibility framework; external-control draft guidances</td><td>Fewer patients on placebo at the same statistical power</td></tr>
       </tbody>
     </table>
   </div>
@@ -811,18 +769,18 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
   <div class="fade-in">
     <span class="label label-blue">Five-Year Plan</span>
     <h2 style="margin-top:12px">Development Roadmap</h2>
-    <p class="text-light" style="max-width:700px;margin-bottom:32px">Phased program with go/no-go decision points. $3.75M total direct costs. <strong>v2 adds a supply-chain workstream running in parallel from Year 1</strong> — because the compliance deadline lands in Year 3, and vendor qualification takes longer than the notice period the law provides.</p>
+    <p class="text-light" style="max-width:700px;margin-bottom:32px">Phased program with go/no-go decision points. $3.75M total direct costs. <strong>A supply-chain workstream runs in parallel from Year 1</strong> — the compliance deadline lands in Year 3, and vendor qualification takes longer than the notice period the law provides.</p>
   </div>
   <div class="timeline fade-in">
     <div class="tl-item"><div class="tl-dot" style="background:var(--teal)"></div><div class="tl-year" style="color:var(--teal)">Year 1 — Platform Engineering &amp; In Silico</div><div class="tl-content"><div class="tl-milestone"><strong>Q1–Q2:</strong> MD simulation campaign across candidate architectures. Generative design of the pH-labile and GSH-reducible lipid components. LNP formulation screening (DoE). Lead formulation: 80–120 nm, PDI &lt;0.2, EE &gt;80%.</div><div class="tl-milestone"><strong>Q3–Q4:</strong> Dual-gate engineering + site-specific conjugation of the antibody fragment. Release spec: &lt;0.1% off-target, &gt;80% TME-triggered in 4 hrs, uniform ligand-to-particle ratio, linker plasma stability characterized.</div><div class="tl-milestone" style="border-left:3px solid var(--gold);padding-left:10px"><strong style="color:var(--gold)">Parallel — Supply chain:</strong> Full multi-tier vendor map. BIOSECURE compliance status documented for every CRO, CDMO, sequencing vendor, and data platform.</div></div></div>
-    <div class="tl-item"><div class="tl-dot" style="background:var(--blue)"></div><div class="tl-year" style="color:var(--blue)">Year 2 — In Vitro Validation</div><div class="tl-content"><div class="tl-milestone"><strong>Q1–Q2:</strong> Single-payload IC₅₀ across 8+ cell lines (breast, lung, CRC, melanoma, pancreatic, ovarian, prostate, hematologic) — <strong>multi-ancestry panel with documented provenance</strong>.</div><div class="tl-milestone"><strong>Q3–Q4:</strong> Full combination synergy — Chou-Talalay CI across all payload combinations. <strong>Bystander assay in antigen-negative co-culture</strong> — the specific gap v1 could not address.</div><div class="tl-milestone" style="border-left:3px solid var(--gold);padding-left:10px"><strong style="color:var(--gold)">Parallel — Supply chain:</strong> Compliant second source qualified for every critical step.</div><div class="tl-gate">GO/NO-GO #1: CI &lt;0.5 in ≥6/8 lines AND selectivity &gt;100× AND demonstrated bystander kill</div></div></div>
+    <div class="tl-item"><div class="tl-dot" style="background:var(--blue)"></div><div class="tl-year" style="color:var(--blue)">Year 2 — In Vitro Validation</div><div class="tl-content"><div class="tl-milestone"><strong>Q1–Q2:</strong> Single-payload IC₅₀ across 8+ cell lines (breast, lung, CRC, melanoma, pancreatic, ovarian, prostate, hematologic) — <strong>multi-ancestry panel with documented provenance</strong>.</div><div class="tl-milestone"><strong>Q3–Q4:</strong> Full combination synergy — Chou-Talalay CI across all payload combinations. <strong>Bystander assay in antigen-negative co-culture</strong> — the endpoint no targeted arm can satisfy on its own.</div><div class="tl-milestone" style="border-left:3px solid var(--gold);padding-left:10px"><strong style="color:var(--gold)">Parallel — Supply chain:</strong> Compliant second source qualified for every critical step.</div><div class="tl-gate">GO/NO-GO #1: CI &lt;0.5 in ≥6/8 lines AND selectivity &gt;100× AND demonstrated bystander kill</div></div></div>
     <div class="tl-item"><div class="tl-dot" style="background:var(--purple)"></div><div class="tl-year" style="color:var(--purple)">Year 3 — In Vivo Efficacy</div><div class="tl-content"><div class="tl-milestone"><strong>Q1–Q2:</strong> Xenograft models (MDA-MB-231, A549, HCT116) — TGI, PK/BD, safety. <strong>Mixed antigen-positive/negative tumors</strong> to test bystander effect in vivo.</div><div class="tl-milestone"><strong>Q3–Q4:</strong> Syngeneic models (4T1, LLC, CT26) — immune profiling, survival, re-challenge. OMNIX-U + OMNIX-P co-administration.</div><div class="tl-milestone" style="border-left:3px solid var(--coral);padding-left:10px"><strong style="color:var(--coral)">BIOSECURE prohibitions take effect (~late 2028).</strong> Second sources must already be qualified.</div><div class="tl-gate">GO/NO-GO #2: ≥60% CR in ≥2/3 syngeneic models</div></div></div>
     <div class="tl-item"><div class="tl-dot" style="background:var(--gold)"></div><div class="tl-year" style="color:var(--gold)">Year 4 — IND-Enabling</div><div class="tl-content"><div class="tl-milestone"><strong>Q1–Q2:</strong> Dose optimization. MTD. Therapeutic index. Staggered escalation protocol for the combined immune-activating and cytotoxic arms.</div><div class="tl-milestone"><strong>Q3–Q4:</strong> GLP toxicology — 28-day repeat-dose, rodent + non-rodent (compliant CRO).</div><div class="tl-milestone" style="border-left:3px solid var(--purple);padding-left:10px"><strong style="color:var(--purple)">Parallel — Clinical design:</strong> Digital-twin model built and locked. Synthetic control arm methodology assembled against the FDA seven-step credibility framework.</div></div></div>
     <div class="tl-item"><div class="tl-dot" style="background:var(--coral)"></div><div class="tl-year" style="color:var(--coral)">Year 5 — Regulatory</div><div class="tl-content"><div class="tl-milestone"><strong>Q1–Q2:</strong> PK/BD, CMC, scale-up manufacturing. R-based, containerized, Dataset-JSON data package assembled.</div><div class="tl-milestone"><strong>Q3–Q4:</strong> Pre-IND meeting with FDA CBER, including the synthetic control arm and ancestry-stratification plan. IND prep. Partnership discussions.</div><div class="tl-gate">MILESTONE: Pre-IND complete; IND-ready, manufacturable, compliance-cleared package assembled</div></div></div>
   </div>
   <div class="card fade-in" style="margin-top:32px;border-left:4px solid var(--navy);background:linear-gradient(to right,#F8FAFC,#fff)">
     <h3 style="color:var(--navy)">What the program actually delivers</h3>
-    <p style="font-size:.9rem;line-height:1.65;margin-top:6px">v1 framed the five-year output as an IND-ready package. That is right but incomplete about who it is for. More than $230 billion in biopharma revenue loses exclusivity by 2030 — up to 65% of current sales for some large-cap companies — and no organic pipeline replaces that on that timeline. Acquirers are buying de-risked, clinical-stage assets in oncology, cardiometabolic disease, and immunology, increasingly with manufacturing attached and increasingly structured with contingent value rights that pay against clinical milestones.</p>
+    <p style="font-size:.9rem;line-height:1.65;margin-top:6px">Calling the five-year output an IND-ready package is accurate but incomplete about who it is for. More than $230 billion in biopharma revenue loses exclusivity by 2030 — up to 65% of current sales for some large-cap companies — and no organic pipeline replaces that on that timeline. Acquirers are buying de-risked, clinical-stage assets in oncology, cardiometabolic disease, and immunology, increasingly with manufacturing attached and increasingly structured with contingent value rights that pay against clinical milestones.</p>
     <p style="font-size:.9rem;line-height:1.65;margin-top:10px">So the honest framing of the deliverable: <strong>a de-risked, IND-ready, manufacturable, compliance-cleared oncology platform asset</strong> with a defined expansion path and a reproducible data package. Not a drug. An asset that an organization with the capital to run Phase III can turn into one.</p>
   </div>
 </section>
@@ -832,25 +790,24 @@ h3{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;line-height:1.3;margin-b
   <div class="fade-in">
     <span class="label" style="background:rgba(255,255,255,.15);color:#fff">Transparency</span>
     <h2 style="margin-top:12px;color:#fff">Known Risks & Mitigations</h2>
-    <p style="color:rgba(255,255,255,.8);max-width:700px;margin-bottom:32px">Every ambitious program has risks. Here's what could go wrong and how we handle it. <strong style="color:#fff">v2 retired two risks, downgraded two, elevated one, and added four new ones</strong> — three of which the v1 architecture had no way to surface.</p>
+    <p style="color:rgba(255,255,255,.8);max-width:700px;margin-bottom:32px">Every ambitious program has risks. Here's what could go wrong and how we handle it.</p>
   </div>
   <div class="grid grid-2 fade-in">
-    <div class="card risk-card" style="box-shadow:0 0 0 2px rgba(232,93,117,.5)"><div class="risk-header"><div class="risk-level" style="background:var(--coral)"></div><div class="risk-title">BIOSECURE supply-chain disruption <span style="color:var(--coral);font-size:.7rem">NEW</span></div></div><div class="risk-desc">NIH funding triggers the contractor flow-down provision. A vendor can become unusable through dynamic designation, with no new legislation required. Prohibitions bite ~late 2028 — Year 3.</div><div class="risk-mitigation"><strong>Mitigation:</strong> Multi-tier vendor map in Year 1; compliant second source qualified for every critical step before Year 3; U.S./EU/India capacity. Qualification takes longer than the notice period the law provides.</div></div>
-    <div class="card risk-card" style="box-shadow:0 0 0 2px rgba(232,93,117,.5)"><div class="risk-header"><div class="risk-level" style="background:var(--coral)"></div><div class="risk-title">Population generalizability failure <span style="color:var(--coral);font-size:.7rem">NEW</span></div></div><div class="risk-desc">A personalization engine trained on European-ancestry-dominant reference data produces medicine that works well for that population and less well for everyone else. A 2026 bispecific won decisively in a single-country trial, then landed at p=0.057 on survival globally.</div><div class="risk-mitigation"><strong>Mitigation:</strong> Multi-ancestry cell lines and reference datasets; performance reported by ancestry group; prospective stratified analysis. Cheap now, near-unfixable later.</div></div>
-    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--coral)"></div><div class="risk-title">Linker instability / premature release <span style="color:var(--coral);font-size:.7rem">NEW</span></div></div><div class="risk-desc">Direct consequence of adding a cytotoxic arm. Too labile and the payload spills into circulation — chemotherapy with extra steps. Too stable and it never releases.</div><div class="risk-mitigation"><strong>Mitigation:</strong> Tetrapeptide cleavable linker with extensive clinical precedent. Plasma stability becomes a primary release specification, characterized before any efficacy claim.</div></div>
-    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--gold)"></div><div class="risk-title">Non-uniform ligand density <span style="color:var(--gold);font-size:.7rem">NEW</span></div></div><div class="risk-desc">Statistical conjugation produces some particles heavily decorated and others bare — and an unpredictable therapeutic window as a result.</div><div class="risk-mitigation"><strong>Mitigation:</strong> Unnatural-amino-acid site-specific conjugation. Ligand-to-particle uniformity becomes a release criterion, not a characterization footnote.</div></div>
-    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--gold)"></div><div class="risk-title">Cytokine release syndrome <span style="color:var(--gold);font-size:.7rem">ELEVATED</span></div></div><div class="risk-desc">The bystander cytotoxic adds tumor-lysis burden on top of CD47 and BiTE immune activation. Risk is higher in v2 than v1, not lower.</div><div class="risk-mitigation"><strong>Mitigation:</strong> Gate-restricted local release. Staggered dose escalation separating the immune-activating and cytotoxic arms. Tocilizumab rescue protocol.</div></div>
+    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--coral)"></div><div class="risk-title">BIOSECURE supply-chain disruption</div></div><div class="risk-desc">NIH funding triggers the contractor flow-down provision. A vendor can become unusable through dynamic designation, with no new legislation required. Prohibitions bite ~late 2028 — Year 3.</div><div class="risk-mitigation"><strong>Mitigation:</strong> Multi-tier vendor map in Year 1; compliant second source qualified for every critical step before Year 3; U.S./EU/India capacity. Qualification takes longer than the notice period the law provides.</div></div>
+    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--coral)"></div><div class="risk-title">Population generalizability failure</div></div><div class="risk-desc">A personalization engine trained on European-ancestry-dominant reference data produces medicine that works well for that population and less well for everyone else. A 2026 bispecific won decisively in a single-country trial, then landed at p=0.057 on survival globally.</div><div class="risk-mitigation"><strong>Mitigation:</strong> Multi-ancestry cell lines and reference datasets; performance reported by ancestry group; prospective stratified analysis. Cheap now, near-unfixable later.</div></div>
+    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--coral)"></div><div class="risk-title">Linker instability / premature release</div></div><div class="risk-desc">Direct consequence of adding a cytotoxic arm. Too labile and the payload spills into circulation — chemotherapy with extra steps. Too stable and it never releases.</div><div class="risk-mitigation"><strong>Mitigation:</strong> Tetrapeptide cleavable linker with extensive clinical precedent. Plasma stability becomes a primary release specification, characterized before any efficacy claim.</div></div>
+    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--gold)"></div><div class="risk-title">Non-uniform ligand density</div></div><div class="risk-desc">Statistical conjugation produces some particles heavily decorated and others bare — and an unpredictable therapeutic window as a result.</div><div class="risk-mitigation"><strong>Mitigation:</strong> Unnatural-amino-acid site-specific conjugation. Ligand-to-particle uniformity becomes a release criterion, not a characterization footnote.</div></div>
+    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--gold)"></div><div class="risk-title">Cytokine release syndrome</div></div><div class="risk-desc">The bystander cytotoxic adds tumor-lysis burden on top of CD47 and BiTE immune activation. This is the price of the multi-mechanism design, and it is paid up front.</div><div class="risk-mitigation"><strong>Mitigation:</strong> Gate-restricted local release. Staggered dose escalation separating the immune-activating and cytotoxic arms. Tocilizumab rescue protocol.</div></div>
     <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--blue)"></div><div class="risk-title">Novel lipid regulatory path</div></div><div class="risk-desc">Stimuli-responsive lipids are new molecular entities needing separate safety characterization.</div><div class="risk-mitigation"><strong>Mitigation:</strong> Pre-IND in Year 5. Precedent: DLin-MC3-DMA was novel when Onpattro was approved.</div></div>
-    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--green)"></div><div class="risk-title">Release gate kinetics <span style="color:var(--green);font-size:.7rem">DOWNGRADED</span></div></div><div class="risk-desc">Triggers may not produce a clean binary response. In v1 this was a critical-path risk carrying the reproducibility problem of the weakest component.</div><div class="risk-mitigation"><strong>Resolved by design:</strong> Primary architecture is now dual-gate pH+GSH plus antigen engagement. The ROS layer develops in parallel with its own go/no-go and no longer gates the program.</div></div>
-    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--green)"></div><div class="risk-title">Antigen heterogeneity <span style="color:var(--green);font-size:.7rem">REFRAMED</span></div></div><div class="risk-desc">v1 proposed swapping the BiTE target — which addresses heterogeneity <em>between</em> patients, not the antigen-negative cells inside a single tumor. That was the wrong problem.</div><div class="risk-mitigation"><strong>Resolved by design:</strong> The bystander payload kills antigen-negative neighbours directly. BiTE antigen is also now selected per tumor type by the computational layer rather than fixed by default.</div></div>
+    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--blue)"></div><div class="risk-title">Release gate kinetics</div></div><div class="risk-desc">Triggers may not produce a clean binary response — partial activation at intermediate conditions rather than a sharp on/off transition.</div><div class="risk-mitigation"><strong>Mitigation:</strong> The primary path uses only the two highest-maturity biochemical triggers plus antigen engagement. The ROS layer develops in parallel with its own go/no-go, so the least characterized chemistry sits off the critical path.</div></div>
+    <div class="card risk-card"><div class="risk-header"><div class="risk-level" style="background:var(--blue)"></div><div class="risk-title">Antigen heterogeneity</div></div><div class="risk-desc">No tumor expresses a single antigen uniformly. Antigen-negative cells inside an otherwise antigen-positive tumor are what relapse is made of, and no targeted arm can reach them.</div><div class="risk-mitigation"><strong>Mitigation:</strong> The bystander payload kills antigen-negative neighbours directly. The BiTE antigen is selected per tumor type by the computational layer rather than fixed by default.</div></div>
   </div>
 </section>
 
 <footer style="background:var(--navy);color:rgba(255,255,255,.5);text-align:center;padding:36px 20px;font-size:.8rem;line-height:1.8">
   <p><strong style="color:#fff">Project OMNIX</strong> — Omni-Modal Nanotherapeutic with Intelligent Cross-Targeting</p>
-  <p>Research Dashboard · NIH/NCI R01 · PAR-25-336 (TTNCI) · <span style="color:#A8E6CF">Architecture v2 — August 2026</span></p>
+  <p>Research Dashboard · NIH/NCI R01 · PAR-25-336 (TTNCI)</p>
   <p style="margin-top:10px;font-size:.75rem">Theoretical research proposal. No therapeutic claims. Data from published preclinical and clinical evidence.</p>
-  <p style="margin-top:8px;font-size:.72rem;opacity:.7">v2 revision prompted by Bruce Li, "AI Has Reinvented Drug Discovery. Now Come the Borders," HackerNoon, 11 August 2026.</p>
 </footer>
 
 <script>
@@ -882,18 +839,18 @@ function selectLayer(btn){
     {l:'LNP Core Formulation',t:9,c:'#22C55E',s:'9'},
     {l:'Microfluidic GMP Manufacturing',t:9,c:'#22C55E',s:'9'},
     {l:'mRNA Synthesis & Encapsulation',t:8.5,c:'#22C55E',s:'8–9'},
-    {l:'Targeted Protein Degraders ✦',t:8.5,c:'#22C55E',s:'8–9'},
-    {l:'Topo I Payload + Linker ✦',t:8.5,c:'#22C55E',s:'8–9'},
-    {l:'Site-Specific Conjugation ✦',t:6.5,c:'#22C55E',s:'6–7'},
-    {l:'Personalized Neoantigen mRNA ✦',t:6.5,c:'#22C55E',s:'6–7'},
+    {l:'Targeted Protein Degraders',t:8.5,c:'#22C55E',s:'8–9'},
+    {l:'Topo I Payload + Linker',t:8.5,c:'#22C55E',s:'8–9'},
+    {l:'Site-Specific Conjugation',t:6.5,c:'#22C55E',s:'6–7'},
+    {l:'Personalized Neoantigen mRNA',t:6.5,c:'#22C55E',s:'6–7'},
     {l:'GSH-Responsive Disulfides',t:5.5,c:'#4A90D9',s:'5–6'},
-    {l:'Synthetic Control / Digital Twin ✦',t:5.5,c:'#4A90D9',s:'5–6'},
+    {l:'Synthetic Control / Digital Twin',t:5.5,c:'#4A90D9',s:'5–6'},
     {l:'pH-Responsive Hydrazones',t:4.5,c:'#4A90D9',s:'4–5'},
-    {l:'Dual-Gate + Antigen Release ✦',t:4.5,c:'#4A90D9',s:'4–5'},
-    {l:'Generative Molecular Design ✦',t:4.5,c:'#4A90D9',s:'4–5'},
+    {l:'Dual-Gate + Antigen Release',t:4.5,c:'#4A90D9',s:'4–5'},
+    {l:'Generative Molecular Design',t:4.5,c:'#4A90D9',s:'4–5'},
     {l:'AI Personalization Engine',t:3.5,c:'#F0A500',s:'3–4'},
     {l:'ROS Thioketals (upgrade track)',t:3.5,c:'#F0A500',s:'3–4'},
-    {l:'4-Component Co-Encapsulation ✦',t:3.5,c:'#F0A500',s:'3–4'},
+    {l:'4-Component Co-Encapsulation',t:3.5,c:'#F0A500',s:'3–4'},
   ];
   const ct=document.getElementById('trl-chart');
   data.forEach(d=>{const r=document.createElement('div');r.className='trl-row';
